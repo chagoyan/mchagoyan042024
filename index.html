@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Manuel Chagoyan - Portfolio</title>
+
+		<style>
+			/* Mobile First Design  */
+
+			:root {
+				--color-primary: #472116;
+				--color-secondary: #eaa317;
+				--color-tertiary: #000000;
+				--font-primary: arial;
+			}
+
+			html {
+				scroll-behavior: smooth;
+			}
+
+			body {
+				font-family: var(--font-primary);
+				padding: 0;
+				margin: 0;
+			}
+			.container {
+				background-color: white;
+				min-height: 10rem;
+				max-width: 120rem;
+				padding: 1rem 3rem 1rem 3rem;
+				margin: auto;
+			}
+			#pageheader {
+				background-color: #472116;
+				min-height: 200px;
+				padding: 1rem;
+			}
+			#pageheader .container {
+				background-color: #472116;
+			}
+			#pagenav {
+				background-color: black;
+				min-height: 30px;
+				padding: 1rem;
+				text-align: center;
+			}
+
+			#pagenav a {
+				color: darkorange;
+			}
+
+			#logo {
+				background-color: red;
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				background-image: url(Images/mclogo.png);
+				background-size: cover;
+				border: 5px solid #e35c10;
+				position: absolute;
+				left: calc(50% - 75px);
+				transition: all 2s;
+			}
+
+			#media {
+				background-color: lightblue;
+				min-height: 300px;
+				padding: 1rem;
+				background-image: url(Images/mediadragon.jpg);
+				background-size: cover;
+				background-position: center left;
+				transition: all 2s;
+			}
+			#career {
+				background-color: var(--color-primary);
+				min-height: 200px;
+				padding: 1rem;
+			}
+			#pagecontent {
+				background-color: var(--color-primary);
+				min-height: 200px;
+				padding: 1rem;
+			}
+			#semester1 {
+				background-color: var(--color-primary);
+				min-height: 200px;
+				padding: 1rem;
+			}
+			#semester2 {
+				background-color: var(--color-primary);
+				min-height: 200px;
+				padding: 1rem;
+			}
+			#pagefooter {
+				background-color: var(--color-secondary);
+				min-height: 200px;
+				padding: 1rem;
+				text-align: center;
+			}
+
+			#subfooter {
+				background-color: var(--color-tertiary);
+				min-height: 200px;
+				padding: 1rem;
+			}
+
+			#topanchor {
+				height: 25px;
+				width: 25px;
+				padding: 1rem;
+				border: 2px solid black;
+				border-radius: 50%;
+				position: fixed;
+				right: 20px;
+				bottom: 20px;
+				background-color: white;
+			}
+
+			/*  Tablet and Desktop Styles */
+			/* Use media queries to detect browser window size */
+
+			@media screen and (min-width: 321px) {
+			}
+
+			@media screen and (min-width: 480px) {
+			}
+			@media screen and (min-width: 768px) {
+			}
+
+			@media screen and (min-width: 1024px) {
+				#logo {
+					left: 25px;
+				}
+				#media {
+					height: 450px;
+				}
+			}
+			@media screen and (min-width: 1200px) {
+				#media {
+					height: 600px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Named Anchor to navigate to the top -->
+		<a name="top"></a>
+
+		<!-- begin pageheader -->
+		<header id="pageheader">
+			<div class="container">
+				<a href="https://chsserver01.org/2024/mchagoyan042024/">
+					<div id="logo"></div>
+				</a>
+			</div>
+		</header>
+		<!-- end pageheader -->
+
+		<!-- begin pagenav -->
+		<nav id="pagenav">
+			<a href="#career">Career</a>
+			|
+			<a href="#semester1">Semester 1</a>
+			|
+			<a href="#semester2">Semester 2</a>
+		</nav>
+		<!-- end pagenav -->
+
+		<!-- begin media -->
+		<section id="media"></section>
+		<!-- end media  -->
+
+		<!-- begin career -->
+		<section id="career">
+			<div class="container">
+				<a name="career"></a>
+				<h2>Career</h2>
+
+				<ul>
+					<li>Letter of Introduction</li>
+					<li>Resume</li>
+					<li>Job Application</li>
+					<li>Career Plan</li>
+					<li>Work Samples</li>
+					<li>Certificates</li>
+				</ul>
+			</div>
+		</section>
+		<!-- end career -->
+
+		<!-- begin pagecontent -->
+		<main id="pagecontent">
+			<div class="container">
+				<h2>PageContent</h2>
+			</div>
+		</main>
+		<!-- end pagecontent -->
+
+		<!-- begin semesters1 -->
+		<section id="semester1">
+			<div class="container">
+				<a name="semester1"></a>
+				<h2>Semester1</h2>
+				<ul>
+					<li><a href="Semester1/A001JS/a001js.html">A001JS</a></li>
+					<li><a href="Semester1/A002JS/a002js.html">A002JS</a></li>
+					<li><a href="Semester1/A003JS/a003js.html">A003JS</a></li>
+					<li><a href="Semester1/A004JS/a004js.html">A004JS</a></li>
+					<li><a href="Semester1/A005JS/a005js.html">A005JS</a></li>
+					<li><a href="Semester1/A006Js/a006js.html">A006JS</a></li>
+				</ul>
+			</div>
+		</section>
+		<!-- end semesters1 -->
+
+		<!-- begin semesters2 -->
+		<section id="semester2">
+			<div class="container">
+				<a name="semester2"></a>
+				<h2>Semester2</h2>
+			</div>
+		</section>
+		<!-- end semesters2 -->
+
+		<!-- begin pagefooter -->
+		<footer id="pagefooter">
+			<div class="container">
+				<h2>Footer</h2>
+
+				<a>chago</a> |
+
+				<a>color schemes</a> |
+
+				<a href="https://coalingahuron.aeries.net/" target="new">aeries</a> |
+
+				<a>chs</a> |
+
+				<a>classroom</a> |
+
+				<a href="https://codepip.com/">codepip</a> |
+
+				<a>minga</a> |
+			</div>
+		</footer>
+		<!-- end pagefooter -->
+
+		<!-- begin subfooter -->
+		<footer id="subfooter">
+			<div class="container">
+				<h2>Subfooter</h2>
+			</div>
+		</footer>
+		<!-- end subfooter -->
+
+		<div id="topanchor">
+			<a href="#top">Top</a>
+		</div>
+	</body>
+</html>
