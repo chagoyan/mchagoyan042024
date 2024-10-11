@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document Object</title>
+	</head>
+	<body>
+		<h1 id="mainheader">Document Object</h1>
+		<h2 id="secondaryheader">Methods (Actions)</h2>
+		<ul>
+			<li>write()</li>
+			<li>getElementById()</li>
+			<li>querySelector()</li>
+			<li>addEventListener()</li>
+		</ul>
+		<h2>Properties</h2>
+		<ul>
+			<li>title</li>
+			<li>lastModified</li>
+			<li>URL</li>
+		</ul>
+
+		<script>
+			// window.document properties
+
+			// Write to the document
+			window.document.write(
+				'<strong>Page Title:</strong> ' + window.document.title + '<br>'
+			);
+			window.document.write(
+				'<strong>Last Modified:</strong> ' +
+					window.document.lastModified +
+					'<br>'
+			);
+			window.document.write(
+				'<strong>The URL (web address):</strong> ' + window.document.URL
+			);
+
+			// Document methods (actions)
+			window.document.getElementById('mainheader').style.color = 'red';
+			window.document.getElementById('mainheader').style.backgroundColor = 'yellow';
+			window.document.getElementById('mainheader').style.padding = "1rem";
+			window.document.getElementById('mainheader').style.border = "2px solid black";
+
+			window.document.querySelector('#secondaryheader').style.color = 'white';
+			window.document.querySelector('#secondaryheader').style.backgroundColor = 'magenta';
+		</script>
+	</body>
+</html>

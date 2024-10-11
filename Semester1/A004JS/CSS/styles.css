@@ -1,0 +1,8 @@
+body {
+	background-color: burlywood;
+	font-family: arial;
+}
+#highlight {
+	background-color: yellow;
+	padding: 1rem;
+}

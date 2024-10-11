@@ -1,11 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>A003JS</title>
+		<title>A003JS - JavaScript Methods - Document.write()</title>
+		<link href="CSS/prism.css" rel="stylesheet" />
+		<style>
+			body {
+				background-color: lightseagreen;
+			}
+			.highlight {
+				background-color: yellow;
+				padding: 1rem;
+			}
+		</style>
 	</head>
+
 	<body>
-		<h1>A003JS</h1>
+		<h1>JavaScript Methods - document.write()</h1>
+		<h2>A003JS</h2>
+
+		<script>
+			window.document.write(
+				"<p class='highlight'> I am using JavaScript to write the opening to this page.  this text has been created by using JavaScripit window.document.write()</p>"
+			);
+		</script>
+
+		<p>
+			As you write your JavaScript code, please remember that JavaScript is not
+			as forgiving as HTML. If you code something wrong, your Web page generates
+			an error. Be patient and keep these things in mind when coding JavaScript.
+		</p>
+		<ul>
+			<li>JavaScript is case sensitive</li>
+			<li>JavaScript is white-space sensitive (enters matter)</li>
+			<li>JavaScript is sensitive to apostrophes (or single quotes)</li>
+			<li>JavaScript lines should end with a semi-colon</li>
+		</ul>
+
+		<p>
+			The browser window contains other objects, such as the document object.
+			You can refer to the document object by using "window.object." The
+			following is a method (action) of the document object. This method is
+			called by using the following code:
+		</p>
+
+		<p>window.document.write();</p>
+
+		<p>
+			Here's the code to dynamically write the first two sentences of this Web
+			page:
+		</p>
+
+		<pre class="line-numbers">
+	<code class="language-javascript">
+	window.document.write("&lt;p class='highlight'&gt; I am using JavaScript to write the opening to this page.  This text has been created by using JavaScripit window.document.write() &lt;/p&gt;");
+	</code>
+	</pre>
+
+		<script src="Scripts/prism.js"></script>
 	</body>
 </html>

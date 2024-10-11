@@ -1,11 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>A004JS</title>
-	</head>
-	<body>
-		<h1>A004JS</h1>
-	</body>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A004JS</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/prism.css">
+</head>
+
+    <h1>JavaScript - Displaying Document Properties</h1>
+    <h2>A004JS</h2>
+
+    <p>The following includes several properties of the window.document.object </p>
+  
+        <ul>
+            <li>URL</li>
+            <li>title</li>
+            <li>lastModified</li>
+        </ul>
+
+
+    <p>These properties are referenced with the following code (using dot notation):</p>
+
+    <p>window.document.URL - This property gives the domain name and path on the server or computer</p>
+    <p>window.document.title - This property gives the title used on the Web page</p>
+    <p>window.document.lastModified - This property gives the date the Web page was last modified</p>
+
+    <p>Here are the window.document properties for this page:</p>
+
+  <script src="Scripts/scripts.js"></script>
+
+    <p>An important side note: The + symbol is used to join text together (It is called concatination)</p>
+
+    <p>Here's an example of using + (concatination) to join "URL:" and window.document.URL</p>
+
+    <p>window.document.write("URL: " + window.document.URL);</p>
+
+    <p> Here's the code to display the document properties:</p>
+
+    <pre class="line-numbers">
+        <code class="language-js">
+            // Use the write method of the document to write properties
+            
+            window.document.write("&lt;p id='highlight'&gt;")
+
+            window.document.write("&lt;strong&gt;URL:&lt;/strong&gt;" + window.document.URL)
+
+            window.document.write("&lt;br&gt; &lt;strong&gt;Title:&lt;/strong&gt;" + window.document.title)
+
+            window.document.write("&lt;br&gt; &lt;strong&gt;Last Modified:&lt;/strong&gt;" + window.document.lastModified)
+
+            window.document.write("&lt;/p&gt;");
+
+            </code>
+    </pre>
+
+    <br> Notice I added an id to the paragraph in order to style the display of the document properties.</br>
+
+    <script src="Scripts/prism.js"></script>
+  
+</body>
 </html>
